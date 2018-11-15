@@ -42,18 +42,19 @@ function loadMovies(x, y) {
         var elementLinkButton = document.createElement("a");
         
         //Style and content of html elements
-        elementBigDiv.className = "col-12 col-sm-6 col-md-4 mx-auto text-center big-div";
+        elementBigDiv.className = "col-12 mx-auto text-center big-div";
         elementTopDiv.className = "top-div";
         elementBottomDiv.className = "bottom-div";
-        elementTitle.textContent = movies[i].title;
+        elementTitle.textContent = (i + 1) + ". " + movies[i].title;
         elementYear.textContent = movies[i].year;
         elementYear.className = "bottom-align";
         elementPoster.src = movies[i].poster;
         elementPoster.alt = movies[i].title;
         elementPoster.setAttribute("style", "width: 200px; object-fit: cover;");
-        elementRating.textContent = movies[i].rating;
+        elementRating.textContent = movies[i].rating + "/10 rating";
         elementSynopsis.textContent = movies[i].synopsis;
         elementLinkButton.href = movies[i].link;
+        elementLinkButton.target = "_blank"
         elementLinkButton.textContent = "Watch now";
         elementLinkButton.className = "btn btn-primary bottom-align";
         

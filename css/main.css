@@ -1,31 +1,76 @@
+html {
+    font-size: 20px;
+}
 body {
     box-sizing: border-box;
+    color: white;
+    background-image: url("https://getreelcinemas.com//wp-content/uploads/2015/02/Background-Narrow.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Passion One', cursive;
+}
+#logo {
+    color: #feca57;
+    font-size: 4rem;
 }
 .big-div {
-    min-height: 700px;
     position: relative;
+    margin: 15px auto;
+    padding: 20px 5px;
+    background-color: rgba(255, 255, 255, .2);
+    max-width: 350px;
 }
 .big-div > h6 {
     margin: 20px auto;
 }
 .big-div img {
     height: 300px;
+    margin: 10px auto;
 }
-/*.top-div {
-    height: 150px;
-}*/
 .top-div h4 {
-    height: 100px;
+    height: 50px;
 }
 .bottom-div p {
     width: 100%;
     margin: 10px 0;
-    height: 75px;
+    height: 90px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
-.bottom-align {
-    vertical-align: bottom;
+.btn {
+    width: 80%;
+    max-width: 500px;
+}
+.btn-primary {
+    background-color: #01a3a4;
+    border-color: #01a3a4;
+}
+.btn-primary:hover {
+    background-color: #019191;
+    border-color: #019191;
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 210, 211, .5);
+}
+.btn-secondary {
+    background-color: #8395a7;
+    border-color: #8395a7;
+}
+.btn-secondary:hover {
+    background-color: #748493;
+    border-color: #748493;
+}
+#load-more {
+    margin: 75px auto 20px auto;
+}
+
+@media (max-width: 500px) {
+    #logo {
+        font-size: 2.5rem;
+    }
 }
