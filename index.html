@@ -15,9 +15,19 @@
         <!--Custom CSS-->
         <link href="css/main.css" rel="stylesheet"/>
 
-        <title>Title</title>
+        <title>movieNight</title>
     </head>
     <body>
+        <div class="container text-center py-5">
+            <h1 id="logo">
+                movieNight
+            </h1>
+            <p class="my-5">
+                It's movie night! Grab some popcorn and pick a movie out of the top 12 movies of all time (according to IMDb)!
+            </p>
+        <div class="row" id="movies-div"></div>
+        <button type="button" onclick="loadMore()" class="btn btn-secondary" id="load-more">Load more</button>
+        </div>
 
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

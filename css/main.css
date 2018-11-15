@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+}
+.big-div {
+    min-height: 700px;
+    position: relative;
+}
+.big-div > h6 {
+    margin: 20px auto;
+}
+.big-div img {
+    height: 300px;
+}
+/*.top-div {
+    height: 150px;
+}*/
+.top-div h4 {
+    height: 100px;
+}
+.bottom-div p {
+    width: 100%;
+    margin: 10px 0;
+    height: 75px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.bottom-align {
+    vertical-align: bottom;
+}
